@@ -69,51 +69,7 @@ export default function EmbeddedTrainingWebsite() {
   ];
 
 
-/*
-const handleInquiry = async (e) => {
-  e.preventDefault();
 
-  const formData = new FormData(e.currentTarget);
-
-const name = formData.get("name");
-const phone = formData.get("phone");
-const email = formData.get("email");
-const message = formData.get("message");
-
-  const telegramMessage = `
-NEW STUDENT INQUIRY
-
-Name: ${name}
-Phone: ${phone}
-Email: ${email}
-Message: ${message}
-`;
-
-  const BOT_TOKEN = "8811667408:AAGxwfxIvX75jtSDfDS-wF271RE3mW7zSNM";
-  const CHAT_ID = "5456194475";
-
-  const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-
-  try {
-    await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        chat_id: CHAT_ID,
-        text: telegramMessage,
-      }),
-    });
-
-    alert("Inquiry submitted successfully!");
-
-    form.reset();
-  } catch (error) {
-    alert("Something went wrong.");
-  }
-};
-*/
 const handleInquiry = async (e) => {
   e.preventDefault();
 console.log("API HIT");
@@ -232,6 +188,13 @@ console.log("API HIT");
             </p>
 
             <div className="flex flex-wrap gap-4 mt-10">
+              <a
+                href="/C_Programming_for_Embedded_Systems_brochure.pdf"
+                download
+                className="border border-cyan-400 text-cyan-400 px-8 py-4 rounded-2xl font-semibold hover:bg-cyan-400 hover:text-black"
+              >
+  Download Brochure
+</a>
               <a
                 href="#contact"
                 className="bg-cyan-500 hover:bg-cyan-400 text-black px-8 py-4 rounded-2xl font-bold shadow-lg shadow-cyan-500/30"
