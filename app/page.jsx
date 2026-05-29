@@ -201,14 +201,6 @@ console.log("API HIT");
               >
                 Join Live Batch
               </a>
-
-              <a
-                href="/files/syllabus.pdf"
-                download
-                className="border border-slate-700 hover:border-cyan-400 hover:text-cyan-400 px-8 py-4 rounded-2xl font-semibold"
-              >
-                Download Syllabus
-              </a>
             </div>
 
             <div className="grid grid-cols-3 gap-4 mt-12">
